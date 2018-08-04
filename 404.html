@@ -1,0 +1,1915 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html40/strict.dtd">
+<!-- Created from PDF via Acrobat SaveAsXML -->
+<!-- Mapping table version: 28-February-2003 -->
+<HTML lang="zh-CN">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<STYLE type="text/css">
+DIV[class="Sect"] {
+ text-align:left;
+ margin-bottom:0px;
+ margin-top:0px;
+ margin-right:0px;
+ text-indent:0px;
+ direction:ltr
+}
+IMG {
+ text-align:left;
+ vertical-align:top;
+ margin-bottom:0px;
+ margin-top:0px;
+ margin-right:0px;
+ margin-left:0px;
+ direction:ltr
+}
+P {
+ text-align:left;
+ margin-bottom:0px;
+ margin-top:0px;
+ margin-right:0px;
+ text-indent:0px;
+ direction:ltr
+}
+SPAN {
+ font-family:'SimSun','Sim Sun',sans-serif;
+ font-size:40pt;
+ font-style:normal;
+ font-weight:normal
+}
+DL {
+ text-align:left;
+ margin-bottom:0px;
+ margin-top:0px;
+ margin-right:0px;
+ text-indent:0px;
+ direction:ltr
+}
+LI {
+ list-style-type:none;
+ text-align:left;
+ margin-bottom:0px;
+ margin-top:0px;
+ margin-right:0px;
+ text-indent:0px;
+ direction:ltr
+}
+DD {
+ text-align:left;
+ margin-bottom:0px;
+ margin-top:0px;
+ margin-right:0px;
+ text-indent:0px;
+ direction:ltr
+}
+H1 {
+ text-align:left;
+ margin-bottom:0px;
+ margin-top:0px;
+ margin-right:0px;
+ text-indent:0px;
+ direction:ltr
+}
+</STYLE>
+<META
+ name="dc.creator"
+ content="Administrator" >
+<META
+ name="dc.title"
+ content="Thanks for listening" >
+<META
+ name="dc.date"
+ content="2018-08-03T17:06:55+08:00" >
+<META
+ name="dc.date.modified"
+ content="2018-08-03T17:06:55+08:00" >
+<META
+ name="generator"
+ content="Adobe Acrobat Exchange-Pro 9.3.2" >
+</HEAD>
+<BODY bgcolor=white text=black link=blue vlink=purple alink=fushia >
+<DIV class="Sect">
+<IMG width=960 height=720 style="vertical-align:text-bottom" src="images/文强工作报告_img_0.jpg">
+<IMG width=961 height=43 style="vertical-align:text-bottom" src="images/文强工作报告_img_1.jpg">
+<IMG width=961 height=7 style="vertical-align:text-bottom" src="images/文强工作报告_img_2.jpg">
+<IMG alt="G:\工程大学logo.png" width=108 height=108 style="vertical-align:text-bottom" src="images/文强工作报告_img_3.jpg">
+<DIV class="Sect">
+<P>
+<SPAN style="color:#FF0000"
+>基于深度学习的水面目标检测技术研究</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-size:31.9pt; color:#FF0000"
+>汇报人：李文强</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-size:19.9pt; color:#FF0000"
+>2018</SPAN
+><SPAN style="font-size:19.9pt; color:#FF0000"
+>年</SPAN
+><SPAN style="font-size:19.9pt; color:#FF0000"
+>8</SPAN
+><SPAN style="font-size:19.9pt; color:#FF0000"
+>月</SPAN
+><SPAN style="font-size:19.9pt; color:#FF0000"
+>3</SPAN
+><SPAN style="font-size:19.9pt; color:#FF0000"
+>日</SPAN
+></P>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>上次报告后期工作安排</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>1</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>、深度网络浅层特征图做输入预处理方法</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>2</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>、研究小目标特征图超分辨率方法</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>3</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>、利用生成对抗神经网络进行训练集数据增强</SPAN
+></P>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<H1>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:44pt; color:#FF0000"
+>报告内容</SPAN
+></H1>
+</DIV>
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>抗雾霾方法研究</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>目标跟踪网络研究</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:36pt; color:#FF0000"
+>GAN</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>小目标超分辨率网络研究</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>后期工作安排</SPAN
+></DD>
+
+</dl>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>抗雾霾方法研究</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:28pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>去雾算法研究</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:28pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>雾霾图片生成方法研究</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:28pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>基于</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>yolo2</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>检测网络的抗雾霾训练</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:28pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>基于</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>yolo3</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>检测网络的抗雾霾训练</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:28pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>方法小结</SPAN
+></DD>
+
+</dl>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>抗雾霾方法研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:31.9pt; color:#FF0000"
+>去雾算法研究</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>1</SPAN
+><SPAN style="font-size:28pt; color:#FF0000"
+>、</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>Single Image Haze Removal Using Dark Channel Prior</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>微软亚洲研究院何凯明</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>2009</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>年</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>提出基于暗通道先验的图像去</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>雾算法。</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>640</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>*</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>480</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>照片处理时间在</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>1.3s</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>以内。</SPAN
+></P>
+</DIV>
+<IMG width=478 height=359 style="vertical-align:text-bottom" src="images/文强工作报告_img_4.jpg">
+<IMG width=476 height=359 style="vertical-align:text-bottom" src="images/文强工作报告_img_5.jpg">
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>正常图像与其暗通道</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>有雾图像与其暗通道</SPAN
+></P>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>抗雾霾方法研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:31.9pt; color:#FF0000"
+>去雾算法研究</SPAN
+></DD>
+
+</dl>
+</DIV>
+<IMG width=454 height=302 style="vertical-align:text-bottom" src="images/文强工作报告_img_6.jpg">
+<IMG width=454 height=302 style="vertical-align:text-bottom" src="images/文强工作报告_img_7.jpg">
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>2</SPAN
+><SPAN style="font-size:28pt; color:#FF0000"
+>、</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>去雾效果</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>算法生成雾图像</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>去雾效果图像</SPAN
+></P>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<IMG width=909 height=458 style="vertical-align:text-bottom" src="images/文强工作报告_img_8.jpg">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>抗雾霾方法研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:31.9pt; color:#FF0000"
+>去雾算法研究</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>3</SPAN
+><SPAN style="font-size:28pt; color:#FF0000"
+>、</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>An End</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>to</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>End System for Single Image </SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>Haze Removal</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>IEEE</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>院士悉尼大学陶大程等</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>2016</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>年提出首个端到端的去雾卷</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>积网络</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>---</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>DehazeNet</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>。通过将去雾的介质传播映射图融入到网络</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>结构中实现去雾功能。</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>640</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>*</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>480</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>照片处理时间在</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>1.5s</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>内。</SPAN
+></P>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>抗雾霾方法研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:31.9pt; color:#FF0000"
+>去雾算法研究</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>4</SPAN
+><SPAN style="font-size:28pt; color:#FF0000"
+>、</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>An All</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>in</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>One Network for Dehazing and Beyond</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>微软亚洲研究院李伯伊等</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>2017</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>年提出一种轻量级通用型去雾</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>预处理网络</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>---</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>AOD</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>Net</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>。由于大气散射模型由多个环境变量控制，</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>先估计某一参数接着估计其他参数会导致误差累积，因此同时</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>估计所有参数，建立的模型更加准确。耗时</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>0.1s</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>。</SPAN
+></P>
+</DIV>
+<IMG width=609 height=268 style="vertical-align:text-bottom" src="images/文强工作报告_img_9.jpg">
+</DIV>
+<DIV class="Sect">
+<IMG width=874 height=568 style="vertical-align:text-bottom" src="images/文强工作报告_img_10.jpg">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>抗雾霾方法研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:31.9pt; color:#FF0000"
+>去雾算法研究</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>5</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>、算法效果</SPAN
+></P>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>抗雾霾方法研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:31.9pt; color:#FF0000"
+>雾霾图片生成方法研究</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>1</SPAN
+><SPAN style="font-size:28pt; color:#FF0000"
+>、</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>大气散射模型</SPAN
+></P>
+</DIV>
+<IMG width=960 height=324 style="vertical-align:text-bottom" src="images/文强工作报告_img_11.jpg">
+<IMG width=605 height=95 style="vertical-align:text-bottom" src="images/文强工作报告_img_12.jpg">
+</DIV>
+<DIV class="Sect">
+<IMG width=960 height=498 style="vertical-align:text-bottom" src="images/文强工作报告_img_13.jpg">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>抗雾霾方法研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:31.9pt; color:#FF0000"
+>雾霾图片生成方法研究</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>2</SPAN
+><SPAN style="font-size:28pt; color:#FF0000"
+>、</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>雾霾图片生成</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>像素竖直坐标越低物体距相机越远，近似正切关系。用近似</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>深度图代入散射模型，调控能见度生成多种样本用于网络训练。</SPAN
+></P>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>抗雾霾方法研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>基于</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>yolo2</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>检测网络的抗雾霾训练</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>1</SPAN
+><SPAN style="font-size:28pt; color:#FF0000"
+>、</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>训练效果</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>用</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>MSCOCO2017</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>有关图片生成雾化样本。将能见度</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>20</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>的样本命</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>名为</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>COCO20, </SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>为</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>30</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>的样本命名为</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>COCO30</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>，混合原图、</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>COCO20</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>和</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>COCO30</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>的命为</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>mixed</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>。首先用原图将</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>YOLO2</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>训练到理想状态，然</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>后进行抗雾训练。</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<SPAN style=" font-weight:normal"
+><IMG lang="zh-CN" style="vertical-align:text-bottom" src="images/文强工作报告_img_14.jpg" >
+</SPAN
+><DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>78.00%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>46.36%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>42.73%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>40.03%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>76.03%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>83.80%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>60%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>59.30%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>52.90%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>81.45%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>30.00%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>40.00%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>50.00%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>60.00%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>70.00%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>80.00%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>90.00%</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>original</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>COCO30</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>COCO20</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>COCO20_direct</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>mixed</SPAN
+></P>
+</DIV>
+<SPAN style=" font-weight:normal"
+><IMG lang="zh-CN" style="vertical-align:text-bottom" src="images/文强工作报告_img_15.jpg" >
+</SPAN
+><DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>mAP</SPAN
+></P>
+</DIV>
+<SPAN style=" font-weight:normal"
+><IMG lang="zh-CN" style="vertical-align:text-bottom" src="images/文强工作报告_img_16.jpg" >
+</SPAN
+><DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:16pt; font-weight:bold; color:#404040"
+>Recall</SPAN
+></P>
+</DIV>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>抗雾霾方法研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>基于</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#FF0000"
+>yolo2</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>目标检测网络的抗雾霾训练</SPAN
+></DD>
+
+</dl>
+</DIV>
+<IMG width=463 height=274 style="vertical-align:text-bottom" src="images/文强工作报告_img_17.jpg">
+<IMG width=467 height=274 style="vertical-align:text-bottom" src="images/文强工作报告_img_18.jpg">
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#00AF50"
+>Boat 0.42677224</SPAN
+></P>
+</DIV>
+<IMG width=463 height=274 style="vertical-align:text-bottom" src="images/文强工作报告_img_19.jpg">
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#00AF50"
+>Boat 0.76740058</SPAN
+></P>
+</DIV>
+<IMG width=467 height=274 style="vertical-align:text-bottom" src="images/文强工作报告_img_20.jpg">
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#00AF50"
+>Boat 0.75645214</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>仅用原图训练检测效果</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>原图训练</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>>COCO30</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>训练检测效果</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>原图训练</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>>COCO30</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>训练</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>>COCO20</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>训练检测效果</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>原图</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>+COCO30+COCO20</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>训练检测效果</SPAN
+></P>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>抗雾霾方法研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>基于</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#FF0000"
+>yolo3</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>目标检测网络的抗雾霾训练</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>1</SPAN
+><SPAN style="font-size:28pt; color:#FF0000"
+>、</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>基于</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>yolo3</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>训练效果</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>先用原始图片对网络初始训练，</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>mAP</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>为</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>78.86%</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>，</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>Recall</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>为</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>90%</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>；</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>然后用混合样本继续训练，</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>mAP</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>提到</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>82.83%</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>，</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>Recall</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>为</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>90%</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>。</SPAN
+></P>
+</DIV>
+<IMG width=756 height=449 style="vertical-align:text-bottom" src="images/文强工作报告_img_21.jpg">
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>抗雾霾方法研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>基于</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#FF0000"
+>yolo3</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>目标检测网络的抗雾霾训练</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>2</SPAN
+><SPAN style="font-size:28pt; color:#FF0000"
+>、</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>检测效果</SPAN
+></P>
+</DIV>
+<IMG width=454 height=378 style="vertical-align:text-bottom" src="images/文强工作报告_img_22.jpg">
+<IMG width=454 height=378 style="vertical-align:text-bottom" src="images/文强工作报告_img_23.jpg">
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>抗雾霾方法研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>方法小结</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:24pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>去雾算法虽然可以有效恢复原图，但效果有限且会显著增加</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>网络前向预测时间。将训练样本雾化后训练检测网络</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>显著提</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>升网络在各种能见度下的检测效果</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>，且</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>无需增加网络耗时</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>；</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:24pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>低能见度样通过稍高可见度样本训练后再训练低可见度的样</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>本效果要比直接训练低能见度样本效果好，即</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>能见度递减训</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>练比直接训练效果好</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>；</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:24pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>多种样本</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>混合训练比能见度递减训练综合检测效果更好</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>；</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:24pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>原图训练的检测精度与混合训练的检测精度相近，而训练样</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>本中原图、</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>COCO20</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>以及</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>COCO30</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>数量相同，意味着</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>混合训练</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>后的网络对于原图的检测效果要优于原始网络对原图的检测</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>效果</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>，并且</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>缓解了网络的过拟合现象</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>。</SPAN
+></DD>
+
+</dl>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>目标跟踪网络研究</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:28pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>目标跟踪与目标检测的关联</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:28pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>目标跟踪网络研究现状</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:28pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>目标检测与目标跟踪融合网络</SPAN
+></DD>
+
+</dl>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<IMG width=960 height=637 style="vertical-align:text-bottom" src="images/文强工作报告_img_24.jpg">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>目标跟踪网络研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>目标跟踪与目标检测的关联</SPAN
+></DD>
+
+</dl>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>目标跟踪网络研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>目标跟踪网络研究现状</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>1</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>、</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>经典目标跟踪方法</SPAN
+></P>
+</DIV>
+<IMG width=866 height=299 style="vertical-align:text-bottom" src="images/文强工作报告_img_25.jpg">
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>缺点：</SPAN
+></P>
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:24pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>无法处理和适用复杂的跟踪变化</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>;</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:24pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>跟踪鲁棒性以及准确度与前沿算法差距较大</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>;</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:24pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>2010</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>年以前跟踪领域大部分采用的传统方法。</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#FF0000"
+>Meanshift</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>：</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:19.9pt; color:#000000"
+>对目标建模后计算下一帧目标的概率分布，从而得到局</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:19.9pt; color:#000000"
+>部最密集的区域；</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#FF0000"
+>Particle Filter</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>：</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:19.9pt; color:#000000"
+>对跟踪目标建模并定义相似性度量，按一定分布搜索</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:19.9pt; color:#000000"
+>目标，统计相似度然后确定目标位置</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:19.9pt; color:#000000"
+>；</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#FF0000"
+>Kalman Filter</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>：</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:19.9pt; color:#000000"
+>对目标运动建模，估计目标在下一帧位置；</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>基于特征点的光流算法：</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:19.9pt; color:#000000"
+>通过特征点的光流信息预测目标的下一</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:19.9pt; color:#000000"
+>位置。</SPAN
+></P>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<IMG width=272 height=327 style="vertical-align:text-bottom" src="images/文强工作报告_img_26.jpg">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>目标跟踪网络研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>目标跟踪网络研究现状</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>2</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>、</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>基于相关滤波的跟踪算法</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>12</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>年科英布拉大学</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>P.Martins</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>提出一种基于循环矩阵的核</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>跟踪方法（</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>CSK</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>），并且从</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>数学上完美解决了密集采样</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>问题，并利用快速傅里叶变</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>换实现了检测过程。</SPAN
+></P>
+</DIV>
+<IMG width=51 height=47 style="vertical-align:text-bottom" src="images/文强工作报告_img_27.jpg">
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>14</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>年科英布拉大学</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>P. </SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>Martins</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>提出结合</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>HoG</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>特</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>征的</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>KCF</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>跟踪方法，在</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>跟踪速度和效果上取得</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>惊人成就。</SPAN
+></P>
+</DIV>
+<IMG width=318 height=259 style="vertical-align:text-bottom" src="images/文强工作报告_img_28.jpg">
+<IMG width=290 height=230 style="vertical-align:text-bottom" src="images/文强工作报告_img_29.jpg">
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>17</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>年阿卜杜拉国王科</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>技大学提出结合</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>fHoG</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>特征、颜色直方图以</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>及多通道单灰度图为</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>特征的相关滤波算法。</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>缺点：</SPAN
+></P>
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:24pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>目标快速移动以及大变形情况处理效果较差</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>;</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:24pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>普适性需要进一步研究。</SPAN
+></DD>
+
+</dl>
+</DIV>
+<IMG width=51 height=47 style="vertical-align:text-bottom" src="images/文强工作报告_img_30.jpg">
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>目标跟踪网络研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>目标跟踪网络研究现状</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>3</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>、</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>基于深度学习的跟踪算法</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:19.9pt; color:#000000"
+>四大优势：</SPAN
+></P>
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:19.9pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:19.9pt; color:#000000"
+>卷积特征输出表达能力相对强</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:19.9pt; color:#000000"
+>;</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:19.9pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:19.9pt; color:#000000"
+>处理自遮挡、互遮挡效果好；</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:19.9pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:19.9pt; color:#000000"
+>能与检测结果直接发生关联；</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:19.9pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:19.9pt; color:#000000"
+>端到端输出跟踪结果。</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>15</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>年浦项工科大学</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>Hyeonseob</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>Nam</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>等提出</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>MDNet</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>网络，采用</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>在线更新策略的跟踪方法，超</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>高准确度，</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>1fps</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>。</SPAN
+></P>
+</DIV>
+<IMG width=51 height=47 style="vertical-align:text-bottom" src="images/文强工作报告_img_31.jpg">
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>16</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>年斯坦福大学</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>David Held</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>等提出</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>高速回归型跟踪网络，采用双塔</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>状输入网络用来输入上一帧图像</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>以及当前帧图像，然后回归输出</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>目标区域。较高准确度，</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>100fps</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>。</SPAN
+></P>
+</DIV>
+<IMG width=51 height=47 style="vertical-align:text-bottom" src="images/文强工作报告_img_32.jpg">
+<IMG width=409 height=203 style="vertical-align:text-bottom" src="images/文强工作报告_img_33.jpg">
+<IMG width=430 height=171 style="vertical-align:text-bottom" src="images/文强工作报告_img_34.jpg">
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>DRL</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>RNN</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:18pt; color:#000000"
+>…</SPAN
+></P>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>目标跟踪网络研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>目标跟踪网络研究现状</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>4</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>、</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>基于深度学习的跟踪算法</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#FF0000"
+>DRL</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>2017</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>年首尔大学</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>Sangdoo</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>Yun</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>提出采用深度强化学习方法完成</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>目标跟踪任务。</SPAN
+></P>
+</DIV>
+<IMG width=960 height=288 style="vertical-align:text-bottom" src="images/文强工作报告_img_35.jpg">
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>目标跟踪网络研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>目标跟踪网络研究现状</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>5</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>、</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>基于深度学习的跟踪算法</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#FF0000"
+>RNN</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>2018</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>年提出华盛顿大学</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>Daniel Gordon</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>采用</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>LSTM</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>门控循环神经</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>网络方法完成目标跟踪任务。</SPAN
+></P>
+</DIV>
+<IMG width=521 height=466 style="vertical-align:text-bottom" src="images/文强工作报告_img_36.jpg">
+</DIV>
+<DIV class="Sect">
+<IMG width=692 height=639 style="vertical-align:text-bottom" src="images/文强工作报告_img_37.jpg">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>目标跟踪网络研究</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>目标检测与目标跟踪融合网络</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>1</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>、</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>YOLO3</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; font-weight:bold; color:#FF0000"
+>LSTM</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#FF0000"
+>+</SPAN
+></P>
+</DIV>
+<IMG width=201 height=95 style="vertical-align:text-bottom" src="images/文强工作报告_img_38.jpg">
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>生成对抗小目标超分辨率网络</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:28pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>网络研究</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:28pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>应用方法</SPAN
+></DD>
+
+</dl>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>生成对抗小目标超分辨率网络</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>网络研究</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>1</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>、生成对抗网络</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>2014</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>年</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>OpenAI</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>顶级人工智能专家</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>Ian Goodfellow</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>提出用于生成</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>图像样本的生成对抗网络</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>Generative Adversarial Networks(GAN)</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>。</SPAN
+></P>
+</DIV>
+<IMG width=960 height=79 style="vertical-align:text-bottom" src="images/文强工作报告_img_39.jpg">
+<IMG width=960 height=266 style="vertical-align:text-bottom" src="images/文强工作报告_img_40.jpg">
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>生成对抗小目标超分辨率网络</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#FF0000"
+>生成对抗网络研究</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>2</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>、小目标超分辨率网络</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>2017</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>年北京理工大学李建安提出用于交通标志检测的感知生</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>成对抗神经网络，首次提出用</SPAN
+><SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>PGAN</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>将低分辨率特征图生成高分</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>辨率的特征图，然后将高分辨率的特征图送入分类网络。</SPAN
+></P>
+</DIV>
+<IMG width=960 height=333 style="vertical-align:text-bottom" src="images/文强工作报告_img_41.jpg">
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>生成对抗小目标超分辨率网络</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>网络研究</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>3</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>、超分辨率网络</SPAN
+></P>
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:24pt; color:#000000"
+>2018</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>年中科院白彦成等提出用于检测超小人脸的生成网络，</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:24pt; color:#000000"
+>领先世界水平。</SPAN
+></P>
+</DIV>
+<IMG width=960 height=299 style="vertical-align:text-bottom" src="images/文强工作报告_img_42.jpg">
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>生成对抗小目标超分辨率网络</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>-</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>应用方法</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Calibri'; font-size:28pt; color:#FF0000"
+>1</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#FF0000"
+>、整体网络</SPAN
+></P>
+</DIV>
+<IMG width=480 height=438 style="vertical-align:text-bottom" src="images/文强工作报告_img_43.jpg">
+<IMG width=491 height=429 style="vertical-align:text-bottom" src="images/文强工作报告_img_44.jpg">
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>检测框架</SPAN
+></P>
+</DIV>
+<DIV class="Sect">
+<P>
+<SPAN style="font-family:'sans-serif', 'Li Super'; font-size:18pt; color:#000000"
+>跟踪框架</SPAN
+></P>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:36pt; color:#FF0000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:36pt; color:#FF0000"
+>后期工作安排</SPAN
+></DD>
+
+</dl>
+</DIV>
+<DIV class="Sect">
+<dl>
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:28pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#000000"
+>完善逆光情况下的样本搭建，完成抗逆光网络训练；</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:28pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#000000"
+>完成目标检测与跟踪网络的设计与训练；</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:28pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#000000"
+>完成超分辨率网络在整体网络上的应用；</SPAN
+></DD>
+
+<DD>
+<SPAN style="font-family:'sans-serif', 'Wingdings'; font-size:28pt; color:#000000"
+></SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:28pt; color:#000000"
+>评估整体网络架构性能。</SPAN
+></DD>
+
+</dl>
+</DIV>
+</DIV>
+<DIV class="Sect">
+<IMG width=960 height=720 style="vertical-align:text-bottom" src="images/文强工作报告_img_0.jpg">
+<IMG width=961 height=43 style="vertical-align:text-bottom" src="images/文强工作报告_img_45.jpg">
+<IMG width=961 height=7 style="vertical-align:text-bottom" src="images/文强工作报告_img_46.jpg">
+<IMG alt="G:\工程大学logo.png" width=108 height=108 style="vertical-align:text-bottom" src="images/文强工作报告_img_47.jpg">
+<DIV class="Sect">
+<H1>
+<SPAN style=" font-weight:normal"
+><IMG lang="zh-CN" style="vertical-align:text-bottom" src="images/文强工作报告_img_48.jpg" >
+</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:54pt; color:#C00000"
+>谢谢！</SPAN
+><SPAN style=" font-weight:normal"
+><IMG lang="zh-CN" style="vertical-align:text-bottom" src="images/文强工作报告_img_49.jpg" >
+</SPAN
+><SPAN style="font-family:'sans-serif', 'Li Super'; font-size:54pt; color:#C00000"
+>敬请提出宝贵意见！</SPAN
+></H1>
+</DIV>
+</DIV>
+</BODY>
+</HTML>
